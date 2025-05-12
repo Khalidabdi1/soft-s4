@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Dr. Ahmed al-khodre",
+    "department": "Computer Science",
+    "office": "Building C, Room 315",
+    "role": "Professor ",
+    "courseName": "Software Engineering",
+    "courseCode": "CS305",
+    "availability": [
+      {"day": "Sunday", "hours": "1:00 PM - 3:00 PM"},
+      {"day": "Tuesday", "hours": "10:00 AM - 12:00 PM"}
+    ],
+    "email": "aalkhodre@iu.edu.sa",
+    "bio": "Dr. al-khodre specializes in software architecture and agile development methodologies. He has industry experience with major tech companies .and Head of Student Affairs Unit in College of Computer Science Information Technology Department."
+  },
+  {
+    "name": "Dr. Sarah Johnson",
+    "department": "Computer Science",
+    "office": "Building A, Room 205",
+    "role": "Associate Professor",
+    "courseName": "Introduction to Programming",
+    "courseCode": "CS101",
+    "availability": [
+      {"day": "Monday", "hours": "10:00 AM - 12:00 PM"},
+      {"day": "Wednesday", "hours": "2:00 PM - 4:00 PM"}
+    ],
+    "email": "sjohnson@university.edu",
+    "bio": "Dr. Johnson has 10+ years of experience teaching computer science with expertise in machine learning and data structures. She has published over 30 papers and received multiple teaching excellence awards."
+  },
+  {
+    "name": "Prof. Michael Chen",
+    "department": "Electrical Engineering",
+    "office": "Engineering Hall, Room 310",
+    "role": "Full Professor",
+    "courseName": "Digital Circuit Design",
+    "courseCode": "EE220",
+    "availability": [
+      {"day": "Tuesday", "hours": "1:00 PM - 3:00 PM"},
+      {"day": "Thursday", "hours": "10:00 AM - 12:00 PM"}
+    ],
+    "email": "mchen@university.edu",
+    "bio": "Prof. Chen is a leading researcher in semiconductor technology with industry experience at Intel. His current research focuses on low-power computing architectures and IoT devices."
+  },
+  {
+    "name": "Dr. Amanda Rivera",
+    "department": "Psychology",
+    "office": "Social Sciences Building, Room 415",
+    "role": "Assistant Professor",
+    "courseName": "Cognitive Psychology",
+    "courseCode": "PSY301",
+    "availability": [
+      {"day": "Monday", "hours": "1:00 PM - 3:00 PM"},
+      {"day": "Friday", "hours": "9:00 AM - 11:00 AM"}
+    ],
+    "email": "arivera@university.edu",
+    "bio": "Dr. Rivera specializes in memory and perception research. Her lab investigates how information processing affects decision-making in various contexts. She joined the university after completing her postdoctoral research at Stanford."
+  }
+]

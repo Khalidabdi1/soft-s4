@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professor Finder</title>
+  <!-- Make sure CSS loads before any content renders -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Override Bootstrap's light theme with our dark theme -->
+  <style>
+    /* Force dark theme */
+    body {
+      background-color: #1E1E1E !important;
+      color: #E0E0E0 !important;
+    }
+    
+    /* Fix headline color */
+    .headline {
+      color: #E0E0E0 !important;
+    }
+    
+    /* Fix result message color */
+    .result-message {
+      color: #E0E0E0 !important;
+    }
+    
+    /* Fix favorites title color */
+    .favorites-title {
+      color: #E0E0E0 !important;
+    }
+  </style>
+</head>
+<body>
+  <!--sidebar-->
+  <div class="side-bar">
+    <div class="icon-content">
+
+      <!--landing page-->
+      <div class="landing">
+        <img src="brand.png" alt="Logo" class="brand">
+      </div>
+
+      <div class="icon">
+
+        <span class="material-symbols-outlined icon-e" id="icon-e">
+          search
+        </span>
+
+        <span class="material-symbols-outlined icon-e" id="icon-e">
+          star
+        </span>
+      </div>
+
+      <!--Settings icon-->
+      <div class="Settings-div">
+        <span class="material-symbols-outlined icon-e">
+          settings
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+<!--content-->
+<div class="content">
+
+  <!-- search page  (page one)-->
+  <div class="Search-page">
+    
+    <!--search output-->
+    <div class="search-output">
+      <div class="search-results-container">
+        <h2 class="result-message"></h2>
+        <div class="cards-container"></div>
+      </div>
+    </div>
+
+    <!--welcome before there is output-->
+    <div class="search-welcome">
+      <pre class="headline">
+        A smart platform for students
+        <span class="highlight">to search professors</span> and
+        view <span class="highlight-2">availability</span> and start <span class="highlight-3">conversations</span>
+      </pre>
+    </div>
+
+    <!--search input -->
+    <div class="input-search">
+      <div class="search-buttom-input">
+        <input type="text" placeholder="Search professors..." class="text-input" autofocus>
+
+        <div class="search-button">
+          <div class="button">
+            <button class="search-type-btn active" data-type="name">by name</button>
+            <button class="search-type-btn" data-type="courseName">by Course name</button>
+            <button class="search-type-btn" data-type="courseCode">by Course code</button>
+          </div>
+
+          <div class="sand">
+            <span class="material-symbols-outlined">
+              arrow_upward
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Favorite-page -->
+  <div class="Favorite-page">
+    <div class="favorites-container">
+      <h2 class="favorites-title">Favorite Professors</h2>
+      <div class="favorites-list">
+        <!-- Favorite professors will be added here dynamically -->
+        <div class="no-favorites-message">You haven't added any professors to your favorites yet.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Professor Details Modal -->
+<div class="modal fade" id="professorModal" tabindex="-1" aria-labelledby="professorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="professorModalLabel">Professor Details</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Content will be dynamically inserted here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary contact-btn">Contact Professor</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
